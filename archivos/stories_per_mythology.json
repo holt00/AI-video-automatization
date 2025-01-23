@@ -1,0 +1,254 @@
+{
+    "Mitolog\u00eda Griega": [
+        {
+            "name": "El mito de Prometeo",
+            "description": "Prometeo, un tit\u00e1n, roba el fuego de los dioses para d\u00e1rselo a la humanidad, lo que provoca la ira de Zeus, quien lo castiga encaden\u00e1ndolo a una roca."
+        },
+        {
+            "name": "La historia de Perseo y Medusa",
+            "description": "Perseo, hijo de Zeus, es enviado a matar a Medusa, una gorgona con serpientes por cabello cuyo mirar convierte a las personas en piedra."
+        },
+        {
+            "name": "El laberinto de Creta y el Minotauro",
+            "description": "El rey Minos de Creta encierra al Minotauro, una criatura mitad hombre, mitad toro, en un laberinto, de donde Teseo logra escapar tras matarlo."
+        },
+        {
+            "name": "La guerra de Troya",
+            "description": "Un conflicto \u00e9pico que surge por el rapto de Helena, la esposa de Menelao, causado por Paris, lo que lleva a una larga y devastadora guerra."
+        },
+        {
+            "name": "El viaje de Odiseo",
+            "description": "La historia de Odiseo, quien tras la guerra de Troya, enfrenta numerosos obst\u00e1culos y aventuras en su largo regreso a \u00cdtaca, donde lo espera su esposa Pen\u00e9lope."
+        },
+        {
+            "name": "El mito de Orfeo y Eur\u00eddice",
+            "description": "Orfeo, un m\u00fasico excepcional, desciende al inframundo para rescatar a su amada Eur\u00eddice, pero debe cumplir con la condici\u00f3n de no mirarla hasta volver a la superficie."
+        },
+        {
+            "name": "El ciclo de Edipo",
+            "description": "La tr\u00e1gica historia de Edipo, quien sin saberlo, mata a su padre y se casa con su madre, cumpliendo as\u00ed una profec\u00eda que intenta evitar."
+        },
+        {
+            "name": "Los trabajos de H\u00e9rcules",
+            "description": "H\u00e9rcules, h\u00e9roe de gran fuerza, debe completar doce trabajos imposibles como penitencia, incluyendo la captura del le\u00f3n de Nemea y la obtenci\u00f3n de los manzanos de las Hesp\u00e9rides."
+        },
+        {
+            "name": "El mito de la caja de Pandora",
+            "description": "Pandora, la primera mujer creada por los dioses, recibe una caja que no debe abrir; su curiosidad libera todos los males del mundo, dejando solo la esperanza."
+        },
+        {
+            "name": "La historia de D\u00e9dalo e \u00cdcaro",
+            "description": "D\u00e9dalo, un inventor, escapa de Creta con su hijo \u00cdcaro usando alas de cera; sin embargo, \u00cdcaro vuela demasiado cerca del sol, provocando su ca\u00edda."
+        }
+    ],
+    "Mitolog\u00eda N\u00f3rdica": [
+        {
+            "name": "El Ragnar\u00f6k",
+            "description": "Es la serie de eventos catastr\u00f3ficos que incluye la muerte de muchos dioses, la destrucci\u00f3n del mundo y su posterior renacimiento. Se considera el fin del mundo en la mitolog\u00eda n\u00f3rdica."
+        },
+        {
+            "name": "La creaci\u00f3n del mundo",
+            "description": "La mitolog\u00eda n\u00f3rdica comienza con el caos primordial, de donde emergieron los primeros dioses y el gigante Ymir. Los dioses Odin, Vili y Ve mataron a Ymir y crearon el mundo a partir de su cuerpo."
+        },
+        {
+            "name": "El destino de los dioses",
+            "description": "Los dioses n\u00f3rdicos, especialmente Odin, no pueden escapar de su destino. Esto se relaciona con el concepto de 'wyrd' o destino que enlaza a todos los seres."
+        },
+        {
+            "name": "La b\u00fasqueda de la sabidur\u00eda de Odin",
+            "description": "Odin realiza un viaje a Mimir's Well, donde sacrifica un ojo a cambio de conocimiento y sabidur\u00eda, lo que resalta su b\u00fasqueda incesante de verdad y poder."
+        },
+        {
+            "name": "La historia de Balder",
+            "description": "Balder, el dios de la luz, es asesinado a traici\u00f3n por Loki, lo que desencadena un gran luto entre los dioses. Su muerte representa una p\u00e9rdida significativa de inocencia y justicia."
+        },
+        {
+            "name": "Loki y los hijos de Loki",
+            "description": "Loki, un dios embaucador, es responsable de muchos actos que llevan a consecuencias devastadoras, incluidos sus hijos Fenrir, la serpiente J\u00f6rmungandr y Hel, cuya presencia trae caos al mundo."
+        },
+        {
+            "name": "El viaje a Hel",
+            "description": "La historia de Herm\u00f3\u00f0r, el hijo de Odin, que se dirige al inframundo para intentar recuperar a Balder de Hel, es un viaje que explora la vida, la muerte y el sacrificio en la mitolog\u00eda."
+        },
+        {
+            "name": "La creaci\u00f3n de los enanos",
+            "description": "Los enanos, conocidos por su habilidad en la forja, fueron creados a partir de la sangre y la carne de Ymir, representando la conexi\u00f3n entre la tierra y la creaci\u00f3n de artefactos m\u00e1gicos."
+        },
+        {
+            "name": "La historia de Sigurd y la traici\u00f3n de Gunnar",
+            "description": "Sigurd el valiente es un h\u00e9roe tr\u00e1gico que busca el tesoro del drag\u00f3n Fafnir, pero es v\u00edctima de la traici\u00f3n y el amor, mostrando el conflicto entre la ambici\u00f3n y la lealtad."
+        },
+        {
+            "name": "La Dama de los Nueve Mundos",
+            "description": "El mito de la deidad femenina que une y gobierna sobre los nueve mundos, simboliza la interconexi\u00f3n entre las existencias y la influencia femenina en el ciclo de la vida y la muerte."
+        }
+    ],
+    "Mitolog\u00eda Egipcia": [
+        {
+            "name": "El mito de Osiris",
+            "description": "La historia del dios Osiris, que fue asesinado por su hermano Set y resucitado por su esposa Isis. Este mito simboliza la vida, la muerte y la resurrecci\u00f3n."
+        },
+        {
+            "name": "La creaci\u00f3n del mundo",
+            "description": "Seg\u00fan la mitolog\u00eda egipcia, el mundo fue creado a partir de las aguas del Nun por el dios Atum, a quien siguieron otros dioses como Shu y Tefnut."
+        },
+        {
+            "name": "La batalla de Horus y Set",
+            "description": "Horus, el hijo de Osiris, lucha contra Set para vengar la muerte de su padre y reclamar su derecho al trono, representando el conflicto entre el orden y el caos."
+        },
+        {
+            "name": "La historia de Isis y Osiris",
+            "description": "Isis busca recuperar a su esposo Osiris tras su muerte, y utiliza sus poderes m\u00e1gicos para resucitarlo, lo que la convierte en un s\u00edmbolo de la maternidad y la magia."
+        },
+        {
+            "name": "La traves\u00eda del Alma",
+            "description": "Los antiguos egipcios cre\u00edan en un viaje del alma a trav\u00e9s del Duat (inframundo), donde se enfrentaba a pruebas y juicios antes de alcanzar la vida eterna."
+        },
+        {
+            "name": "La historia de Ra y los enemigos del sol",
+            "description": "El dios sol Ra tiene que enfrentarse a una serpiente llamada Apofis cada noche para renacer cada ma\u00f1ana, simbolizando la lucha entre la luz y la oscuridad."
+        },
+        {
+            "name": "El juicio de Osiris",
+            "description": "El alma del difunto es juzgada por Osiris, quien pesa el coraz\u00f3n del fallecido contra la pluma de Maat para determinar su destino en la otra vida."
+        },
+        {
+            "name": "Los Nueve Arcos",
+            "description": "Un grupo de nueve dioses conocidos como los Nueve Arcos, que representan los diferentes aspectos de la creaci\u00f3n y el equilibrio del universo."
+        },
+        {
+            "name": "La historia de Anubis",
+            "description": "Anubis, el dios de la momificaci\u00f3n y la protecci\u00f3n de las tumbas, gu\u00eda a las almas en su viaje al m\u00e1s all\u00e1 y asegura que est\u00e9n preparadas para el juicio."
+        },
+        {
+            "name": "La venganza de Sekhmet",
+            "description": "Sekhmet, diosa de la guerra y la destrucci\u00f3n, desata su furia contra la humanidad para vengar a Ra, quien se molest\u00f3 con la desobediencia de los humanos."
+        }
+    ],
+    "Mitolog\u00eda Hind\u00fa": [
+        {
+            "name": "La creaci\u00f3n del universo",
+            "description": "Seg\u00fan el Rigveda, el universo fue creado a partir del sacrificio de un ser primigenio llamado Purusha, cuyo cuerpo se dividi\u00f3 en las diferentes partes que conforman el mundo."
+        },
+        {
+            "name": "La historia de Rama y Sita",
+            "description": "El \u00e9pico relato del Ramayana cuenta la vida de Rama, un pr\u00edncipe que se embarca en una aventura para rescatar a su esposa Sita, quien fue secuestrada por el demonio Ravana."
+        },
+        {
+            "name": "La batalla de Kurukshetra",
+            "description": "El Mahabharata narra una gran guerra entre los Pandavas y los Kauravas, dos ramas de una misma familia, abordando temas de dharma (deber) y moralidad."
+        },
+        {
+            "name": "Las travesuras de Krishna",
+            "description": "La vida de Krishna est\u00e1 llena de historias de su infancia traviesa, sus amor\u00edos con las pastoras (gopis) y sus haza\u00f1as heroicas contra demonios."
+        },
+        {
+            "name": "El sacrificio de Daksha",
+            "description": "La historia cuenta c\u00f3mo Daksha, un rey, organiz\u00f3 un gran yajna (sacrificio) sin invitar a su yerno Shiva, lo que provoc\u00f3 un conflicto que resulta en la muerte de Sati, la esposa de Shiva."
+        },
+        {
+            "name": "La leyenda de Ganesha",
+            "description": "Ganesha, el dios de los comienzos y la sabidur\u00eda, fue creado por la diosa Parvati y recibi\u00f3 su cabeza de elefante como resultado de un malentendido con Shiva."
+        },
+        {
+            "name": "La venganza de Hiranyakashipu",
+            "description": "Hiranyakashipu, un rey demonio que buscaba la inmortalidad, fue desafiado por su propio hijo, Prahlada, un devoto de Vishnu, lo que llev\u00f3 a la encarnaci\u00f3n de Vishnu como Narasimha para derrotarlo."
+        },
+        {
+            "name": "La historia de los dos \u00e1rboles",
+            "description": "Los \u00e1rboles Ashvattha y Peepal son relatos sobre la vida, la muerte y la espiritualidad, donde un rey es sacado del ciclo del samsara tras su realizaci\u00f3n espiritual."
+        },
+        {
+            "name": "La creaci\u00f3n de los seres humanos",
+            "description": "Brahma, el dios creador, cre\u00f3 a los seres humanos a partir de su propio ser, impartiendo en ellos el sentido del ego y la unidad con el cosmos."
+        },
+        {
+            "name": "Los cinco Pandavas",
+            "description": "Los cinco hermanos, Yudhishthira, Bhima, Arjuna, Nakula y Sahadeva, representan diferentes virtudes y son la base del Mahabharata, cada uno con su propia historia y fachada heroica."
+        }
+    ],
+    "Mitolog\u00eda Mesopot\u00e1mica": [
+        {
+            "name": "La Epopeya de Gilgamesh",
+            "description": "Una de las obras m\u00e1s antiguas de la literatura, narra las aventuras del rey Gilgamesh y su amistad con Enkidu, as\u00ed como su b\u00fasqueda de la inmortalidad."
+        },
+        {
+            "name": "El Enuma Elish",
+            "description": "El poema de la creaci\u00f3n babil\u00f3nico que describe la lucha entre los dioses, especialmente Marduk, quien se convierte en el dios principal tras derrotar a Tiamat."
+        },
+        {
+            "name": "El mito de la creaci\u00f3n de la humanidad",
+            "description": "Se relata que los dioses crearon a la humanidad a partir de la sangre de un dios sacrificado para aliviar la carga de los dioses."
+        },
+        {
+            "name": "La historia de Atrahasis",
+            "description": "Un mito que narra la creaci\u00f3n de la humanidad, el diluvio y la supervivencia de Atrahasis, un hombre justo que construy\u00f3 un barco para salvarse."
+        },
+        {
+            "name": "La leyenda de Ishtar y Tammuz",
+            "description": "Relata la historia de la diosa Ishtar que desciende al inframundo y su amor por Tammuz, un dios de la vegetaci\u00f3n, acompa\u00f1\u00e1ndolo en su viaje."
+        },
+        {
+            "name": "La historia de la Torre de Babel (en la versi\u00f3n mesopot\u00e1mica)",
+            "description": "Un relato sobre la arrogancia de la humanidad en su intento de construir una torre que llegara al cielo, por lo que los dioses confunden su idioma."
+        },
+        {
+            "name": "El mito de Ninurta",
+            "description": "Relata las haza\u00f1as de Ninurta, el dios de la guerra y la caza, y su lucha contra demonios y fuerzas adversas."
+        },
+        {
+            "name": "La historia de los viajes de Inanna",
+            "description": "Abarca las aventuras de Inanna, la diosa del amor y la guerra, incluyendo su descenso al inframundo y su retorno a la tierra."
+        },
+        {
+            "name": "El ciclo de la reina Semiramis",
+            "description": "Trata sobre la reina Semiramis, una figura legendaria que construy\u00f3 grandes ciudades y obras, a menudo considerada como semi-divina."
+        },
+        {
+            "name": "El mito del diluvio",
+            "description": "Un relato similar a la historia de No\u00e9, donde un dios decide destruir la humanidad con un diluvio y salva a un hombre justo y su familia."
+        }
+    ],
+    "Mitolog\u00eda Azteca": [
+        {
+            "name": "La creaci\u00f3n del mundo",
+            "description": "En la mitolog\u00eda azteca, se narra que el mundo fue creado a partir de la lucha entre los dioses, donde Tezcatlipoca y Quetzalc\u00f3atl jugaron un papel primordial."
+        },
+        {
+            "name": "La historia de Quetzalc\u00f3atl",
+            "description": "Quetzalc\u00f3atl, la serpiente emplumada, es uno de los dioses m\u00e1s importantes que representaba el viento, la vida y el conocimiento, conocido por su amor por la humanidad."
+        },
+        {
+            "name": "La guerra entre Huitzilopochtli y Coyolxauhqui",
+            "description": "La historia de Huitzilopochtli, el dios de la guerra, que derrot\u00f3 a su hermana Coyolxauhqui y sus hermanas, simbolizando el triunfo del sol sobre la luna."
+        },
+        {
+            "name": "La leyenda de los cinco soles",
+            "description": "Los aztecas cre\u00edan que hab\u00edan habido cuatro soles antes del actual, cada uno asociado con una era del mundo, y cada uno destruido en cat\u00e1strofes."
+        },
+        {
+            "name": "El sacrificio de los dioses",
+            "description": "Los dioses aztecas se sacrificaron entre s\u00ed para dar origen al mundo y al sol, ofreciendo su esencia para la creaci\u00f3n."
+        },
+        {
+            "name": "El mito de Tlaloc y la lluvia",
+            "description": "Tlaloc, el dios de la lluvia, es fundamental para la agricultura. Su ira puede provocar sequ\u00edas o inundaciones, dependiendo de c\u00f3mo se le ofrezcan sacrificios."
+        },
+        {
+            "name": "La leyenda de la fundaci\u00f3n de Tenochtitl\u00e1n",
+            "description": "La historia de c\u00f3mo los aztecas encontraron el lugar ideal para fundar su ciudad en un islote del lago de Texcoco, guiados por la se\u00f1al de un \u00e1guila devorando una serpiente."
+        },
+        {
+            "name": "Mictlantecuhtli y la vida despu\u00e9s de la muerte",
+            "description": "Mictlantecuhtli, el dios de la muerte, gobernaba el inframundo. A los aztecas les ense\u00f1aron que la muerte no era el final, sino una transici\u00f3n."
+        },
+        {
+            "name": "La historia de la creaci\u00f3n del hombre",
+            "description": "Los dioses crearon al hombre de ma\u00edz, el alimento sagrado, dando vida a la humanidad, que ser\u00eda el centro de la oferta a los dioses."
+        },
+        {
+            "name": "El viaje de los soles hacia el inframundo",
+            "description": "Los aztecas cre\u00edan que el sol ten\u00eda que luchar cada noche contra fuerzas oscuras para renacer cada ma\u00f1ana, simbolizando el ciclo de la vida y la muerte."
+        }
+    ]
+}
