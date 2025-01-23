@@ -5,13 +5,11 @@ from dotenv import load_dotenv #module to load openai api key from .env file
 import json
 
 
-def generate_initial_list (): #Function that will generate a Json containing what was requested in the first place
+def generate_initial_list (prompt): #Function that will generate a Json containing what was requested in the first place
     load_dotenv()  # geting the api key from .env file
     client = OpenAI()
 
-    prompt = "Devuelve un json con las 6 mitologias mas importantes e interesantes del mundo" #prompt to be used for the completion
-
-    response = client.chat.completions.create(
+    response = client.chat.completions.create( #asking GPT-4 to return the 6 most important and interesting mythologies in the world
         model= "gpt-4o-mini-2024-07-18",
         messages=[
             {"role": "system", "content": "Eres un hostoriador de mitologias"},
@@ -48,63 +46,66 @@ def generate_initial_list (): #Function that will generate a Json containing wha
                          }
                          },
     )
-    return json.loads(response.choices[0].message.content) #printing the response from the api (the 6 most important and interesting mythologies in the world
+    return json.loads(response.choices[0].message.content)["items"] #printing the response from the api (the 6 most important and interesting mythologies in the world
 
 def generate_story_list (list, story_num): #Function that will list n most important sorties of each mythology
     load_dotenv()  # geting the api key from .env file
+    general_story_list = {}
     client = OpenAI()
+    for mytology in list: #for each mithology in the list we will ask the api to return the n most important stories
+        #TODO change if you want another kind of story
+        prompt = f"Devuelve en un json los nombre y una pequeña descripcion de las {story_num} historias mas interesantes de la {mytology["name"]}, , utilizando solo caracteres que json acepte"
+        response = client.chat.completions.create( #asking GPT-4 to return the 10 most important and interesting stories of each mythology
+            model= "gpt-4o-mini-2024-07-18",
+            messages=[
+                {"role": "system", "content": "Eres un hostoriador de mitologias"},
+                {"role": "user", "content": prompt}
+            ],
 
-    #for mytology in list:
-    mytology = list["items"][0]["name"]
-    prompt = f"Devuelve en un json los nombre y una pequeña descripcion de los {story_num} mitos mas importantes de la {mytology}"
-    response = client.chat.completions.create(
-        model= "gpt-4o-mini-2024-07-18",
-        messages=[
-            {"role": "system", "content": "Eres un hostoriador de mitologias"},
-            {"role": "user", "content": prompt}
-        ],
-
-        response_format={"type": "json_schema",
-                         "json_schema": {
-                             "name": "list_of_each_group",
-                             "schema": {
-                                 "type": "object",
-                                 "properties": {
-                                     "items": {
-                                         "type": "array",
+            response_format={"type": "json_schema",
+                             "json_schema": {
+                                 "name": "list_of_each_group",
+                                 "schema": {
+                                     "type": "object",
+                                     "properties": {
                                          "items": {
-                                             "type": "object",
-                                             "properties": {
-                                                 "name": {
-                                                     "type": "string",
-                                                     "description": "El nombre del elemento"
+                                             "type": "array",
+                                             "items": {
+                                                 "type": "object",
+                                                 "properties": {
+                                                     "name": {
+                                                         "type": "string",
+                                                         "description": "El nombre del elemento"
+                                                     },
+                                                     "description": {
+                                                         "type": "string",
+                                                         "description": "La descripción del elemento"
+                                                     }
                                                  },
-                                                 "description": {
-                                                     "type": "string",
-                                                     "description": "La descripción del elemento"
-                                                 }
-                                             },
-                                             "required": ["name", "description"],
-                                             "additionalProperties": False
+                                                 "required": ["name", "description"],
+                                                 "additionalProperties": False
+                                             }
                                          }
-                                     }
-                                 },
-                                 "required": ["items"],
-                                 "additionalProperties": False
+                                     },
+                                     "required": ["items"],
+                                     "additionalProperties": False
+                                 }
                              }
-                         }
-                         },
+                             },
 
-    )
-    return json.loads(response.choices[0].message.content) #printing the response from the api (the 6 most important and interesting mythologies in the world
+        )
+        general_story_list[mytology["name"]] = json.loads(response.choices[0].message.content)["items"]
+
+    return general_story_list #printing the response from the api (the 6 most important and interesting mythologies in the world
 
 
 if __name__ == "__main__":
     story_num = 10
-    initial_list = generate_initial_list()
-    list_per_group = generate_story_list(initial_list, story_num)
-    for m in list_per_group["items"]:
-        print(m["name"])
-        print(m["description"])
-        print("\n")
+    group_generating_prompt = "Devuelve un json con las 6 mitologias mas importantes e interesantes del mundo, utilizando solo caracteres que json acepte" #prompt used to generate the initial list of groups
+    initial_list = generate_initial_list(group_generating_prompt) #we generate the initial groups
+    list_per_group = generate_story_list(initial_list, story_num) #we generate the list of stories of each group
+
+
+    with open("archivos/stories_per_mythology.json", "w") as file:
+        json.dump(list_per_group, file, indent=4)
 
