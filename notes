@@ -11,7 +11,7 @@ payload = {
 headers = {
     "accept": "*/*",
     "content-type": "application/json",
-    "Authorization": "0sfvPohMdqmKJunTVimZE9RjaD5nHfrRdY6Tvc-A_qc="
+    "Authorization": "" //todo add apikey form environment variables
 }
 
 response = requests.post(url, json=payload, headers=headers)
