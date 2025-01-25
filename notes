@@ -1,0 +1,48 @@
+import requests
+
+url = "https://api.sws.speechify.com/v1/audio/speech"
+
+payload = {
+    "audio_format": "mp3",
+    "input": "Hola buenos dias",
+    "language": "es-ES",
+    "voice_id": "stacy"
+}
+headers = {
+    "accept": "*/*",
+    "content-type": "application/json",
+    "Authorization": "0sfvPohMdqmKJunTVimZE9RjaD5nHfrRdY6Tvc-A_qc="
+}
+
+response = requests.post(url, json=payload, headers=headers)
+
+print(response.text)
+
+
+Api call for the audio file
+
+
+import json
+import base64
+
+# Ejemplo de JSON como string
+data_json = """
+{
+  "audio_data": "SUQzBAAAAAAAIlRTU0UAAAAOAAADTGF2ZjYwLjMuMTAwAAAAAAAAAAAAAAD/+3TAAAAAAAAAAAAAAAAAAAAAAABJbmZvAAAADwAAADYAAD3gAAkNDR..."
+}
+"""
+
+# Cargar el JSON
+data = json.loads(data_json)
+
+# Decodificar el audio_data
+audio_data_base64 = data['audio_data']
+audio_data_bytes = base64.b64decode(audio_data_base64)
+
+# Guardar en un archivo binario (opcional)
+with open("audio_decoded.wav", "wb") as f:
+    f.write(audio_data_bytes)
+
+
+
+save the audio file in the local directory
