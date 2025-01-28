@@ -4,6 +4,10 @@ import os
 from dotenv import load_dotenv #module to load openai api key from .env file
 import json
 
+load_dotenv()  # geting the api key from .env file
+
+client = OpenAI()
+
 json_schema = {
      "type": "object",
      "properties": {
@@ -36,8 +40,6 @@ json_schema = {
 
 
 def generate_initial_list (prompt): #Function that will generate a Json containing what was requested in the first place
-    load_dotenv()  # geting the api key from .env file
-    client = OpenAI()
 
     response = client.chat.completions.create( #asking GPT-4 to return the 6 most important and interesting mythologies in the world
         model= "gpt-4o-mini-2024-07-18",
@@ -55,15 +57,14 @@ def generate_initial_list (prompt): #Function that will generate a Json containi
     return json.loads(response.choices[0].message.content)["items"] #printing the response from the api (the 6 most important and interesting mythologies in the world
 
 def generate_story_list (list, story_num, list_generating_prompt): #Function that will list n most important sorties of each mythology
-    load_dotenv()  # geting the api key from .env file
+
     general_story_list = {}
-    client = OpenAI()
+
     for group in list: #for each mithology in the list we will ask the api to return the n most important stories
         #TODO change if you want another kind of story
 
-        prompt = "utilizando unicamente caracteres que json acepte" + list_generating_prompt + f"las {story_num} historias mas importantes e interesantes de la {group["name"]}"
+        prompt = "utilizando unicamente caracteres que json acepte" + list_generating_prompt + f"las {story_num} historias mas importantes e interesantes de la {group["name"]}  , utiliza el campo completed siempre a False"
 
-        prompt = f"Devuelve en un json los nombre y una pequeña descripcion de las {story_num} historias mas interesantes, importantes y virales de la {group["name"]}, , utilizando solo caracteres que json acepte, utiliza el campo completed siempre a False"
         response = client.chat.completions.create( #asking GPT-4 to return the 10 most important and interesting stories of each mythology
             model= "gpt-4o-mini-2024-07-18",
             messages=[
