@@ -5,7 +5,6 @@ from dotenv import load_dotenv #module to load openai api key from .env file
 import json
 
 load_dotenv()  # geting the api key from .env file
-
 client = OpenAI()
 
 json_schema = {

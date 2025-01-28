@@ -1,12 +1,60 @@
 class Story:
     def __init__(self, name, description):
-        self.name = None
-        self.description = None
+        self.name = name
+        self.description = description
         self.paragraphs = []
 
 
+    def __str__ (self):
+        string = str(self.name) + ": " + str(self.description) + "\n" + "\n"
+        for paragraph in self.paragraphs:
+            string += str(paragraph) + "\n"
+        return string
+
+    def __to_dictionary__(self): #This function will return a dictionary with the story information
+        dict = {
+            "name": self.name,
+            "description": self.description,
+            "paragraphs": []
+        }
+        for paragraph in self.paragraphs: #As paragraphs is a list of objects, we need to convert each object to a dictionary before appending it to the list
+            dict["paragraphs"].append(paragraph.__to_dictionary__())
+
+        return dict
+
+    @staticmethod
+    def __from_dictionary__( dictionary): #This function will return a story object from a dictionary
+        name = dictionary["name"]
+        description = dictionary["description"]
+        paragraphs = []
+        for paragraph in dictionary["paragraphs"]: #As paragraphs is a list of dictionaries, we need to convert each dictionary to an object before appending it to the list
+            paragraphs.append(Paragraph.__from_dictionary__(paragraph))
+        story = Story(name, description)
+        story.paragraphs = paragraphs
+        return story
+
 class Paragraph:
     def __init__(self, text):
-        self.text = None
+        self.text = text
         self.images = []
         self.audio = None
+
+    def __str__ (self):
+        return str(self.text)
+
+    def __to_dictionary__(self): #This function will return a dictionary with the paragraph information
+        return {
+            "text": self.text,
+            "images": self.images,
+            "audio": self.audio
+        }
+
+    @staticmethod
+    def __from_dictionary__(dictionary): #This function will return a paragraph object from a dictionary
+        text = dictionary["text"]
+        images = dictionary["images"]
+        audio = dictionary["audio"]
+        paragraph = Paragraph(text)
+        paragraph.images = images
+        paragraph.audio = audio
+        return paragraph
