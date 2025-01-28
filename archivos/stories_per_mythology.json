@@ -1,254 +1,314 @@
 {
-    "Mitología Griega": [
+    "Mitología griega": [
         {
             "name": "La creación del mundo",
-            "description": "Relata cómo Caos dio origen a Gaia, Urano y otros dioses que forman el cosmos."
+            "description": "Relata cómo los dioses surgieron del Caos y cómo se formaron la Tierra y el cielo.",
+            "completed": false
         },
         {
             "name": "Prometeo y el fuego",
-            "description": "Prometeo roba el fuego de los dioses para dárselo a los humanos, lo que provoca la ira de Zeus."
-        },
-        {
-            "name": "El mito de Perséfone",
-            "description": "Perséfone es secuestrada por Hades y su madre Deméter causa invierno al buscarla."
+            "description": "Cuenta la historia de Prometeo, quien robó el fuego de los dioses para dárselo a los humanos, lo que le costó un severo castigo.",
+            "completed": false
         },
         {
             "name": "Los trabajos de Hércules",
-            "description": "Hércules debe completar doce trabajos imposibles como penitencia por un crimen."
+            "description": "Una serie de doce trabajos imposibles que el héroe Hércules tuvo que realizar como penitencia por un crimen.",
+            "completed": false
+        },
+        {
+            "name": "El mito de Orfeo",
+            "description": "La historia de Orfeo, que desciende al inframundo para recuperar a su amada Eurídice, pero falla debido a su falta de fe.",
+            "completed": false
         },
         {
             "name": "La guerra de Troya",
-            "description": "El conflicto épico entre griegos y troyanos, originado por el rapto de Helena."
+            "description": "Un conflicto épico entre los griegos y los troyanos, que culminó en la famosa estrategia del caballo de Troya.",
+            "completed": false
         },
         {
-            "name": "El viaje de Ulises",
-            "description": "Ulises enfrenta numerosos retos en su largo regreso a Ítaca después de la guerra de Troya."
+            "name": "La odisea de Ulises",
+            "description": "Las aventuras de Ulises en su intento por regresar a Ítaca tras la guerra de Troya, enfrentándose a diversos peligros.",
+            "completed": false
         },
         {
-            "name": "El mito de Orfeo y Eurídice",
-            "description": "Orfeo intenta rescatar a su amada del inframundo, pero debe no mirarla al regresar."
+            "name": "El mito de Pandora",
+            "description": "Pandora, la primera mujer creada por los dioses, y su caja que liberó todos los males en el mundo exceptuando la esperanza.",
+            "completed": false
         },
         {
-            "name": "La caja de Pandora",
-            "description": "Pandora abre una caja que libera males sobre la humanidad, dejando solo la esperanza."
+            "name": "Perseo y Medusa",
+            "description": "La historia de Perseo que, con ayuda de los dioses, logra decapitar a Medusa, una gorgona con el poder de convertir a la gente en piedra.",
+            "completed": false
         },
         {
-            "name": "El vuelo de Ícaro",
-            "description": "Ícaro vuela demasiado cerca del sol con alas de cera, ignorando la advertencia de su padre."
+            "name": "La historia de Edip",
+            "description": "Edipo, quien sin saberlo cumple la profecía de matar a su padre y casarse con su madre, explorando el concepto del destino.",
+            "completed": false
         },
         {
-            "name": "Los dioses del Olimpo",
-            "description": "Los principales dioses griegos residen en el Monte Olimpo, cada uno con poderes y dominaciones propias."
+            "name": "La tragedia de Tiresias",
+            "description": "El famoso profeta ciego que, a través de su experiencia y sufrimiento, obtiene sabiduría sobre los dioses y la humanidad.",
+            "completed": false
         }
     ],
-    "Mitología Egipcia": [
+    "Mitología nórdica": [
         {
             "name": "La creación del mundo",
-            "description": "En la mitología egipcia, el mundo fue creado a partir del caos primordial llamado Nun. Los dioses emergieron de Nun, siendo Ja (Atum) el primer dios en crear a los demás."
+            "description": "Relata cómo el dios Odín y sus hermanos crearon el mundo a partir del cuerpo del gigante Ymir, formando tierras, montañas y océanos.",
+            "completed": false
         },
         {
-            "name": "Osiris y su muerte",
-            "description": "Osiris, el dios de la agricultura y la resurrección, fue asesinado por su hermano Seth. Su esposa Isis lo resucitó, convirtiéndolo en el dios de los muertos."
+            "name": "La guerra de los dioses",
+            "description": "El conflicto entre los dioses Aesir y Vanir, que representa la lucha por el poder y la armonía en el cosmos nórdico.",
+            "completed": false
         },
         {
-            "name": "El juicio de Osiris",
-            "description": "Después de la muerte, los egipcios creían que sus corazones eran pesados contra la pluma de Ma'at. Un corazón ligero significaba la entrada al más allá."
+            "name": "La leyenda de Thor y Jörmungandr",
+            "description": "La historia de Thor enfrentándose a la serpiente del mundo, Jörmungandr, en un épico duelo que simboliza el enfrentamiento entre orden y caos.",
+            "completed": false
         },
         {
-            "name": "Ra y la travesía nocturna",
-            "description": "Ra, el dios del sol, viajaba por el inframundo cada noche, enfrentándose a Apofis, la serpiente de la oscuridad, para renacer al día siguiente."
+            "name": "El Ragnarök",
+            "description": "El final del mundo en la mitología nórdica, donde los dioses, héroes y criaturas se enfrentan en una batalla que resulta en la destrucción y nuevo comienzo del cosmos.",
+            "completed": false
+        },
+        {
+            "name": "La vida de la diosa Freyja",
+            "description": "Freyja, diosa del amor y la guerra, es conocida por su belleza y su búsqueda del conocimiento, así como por su conexión con el destino.",
+            "completed": false
+        },
+        {
+            "name": "La historia de Loki",
+            "description": "Loki, el dios embaucador, cuya astucia y traición llevan a los dioses a numerosas complicaciones, incluyendo su papel en el Ragnarök.",
+            "completed": false
+        },
+        {
+            "name": "El destino de Balder",
+            "description": "La muerte del dios Balder, amado por todos, que es provocada por la traición de Loki, marcando un giro trágico en la mitología nórdica.",
+            "completed": false
+        },
+        {
+            "name": "Los viajes de Odín",
+            "description": "Las aventuras del dios supremo Odín por los nueve mundos, buscando sabiduría y enfrentándose a diversos desafíos.",
+            "completed": false
+        },
+        {
+            "name": "La runas y los secretos",
+            "description": "La historia del descubrimiento de las runas por Odín, simbolizando el poder del conocimiento y su importancia en la cultura nórdica.",
+            "completed": false
+        },
+        {
+            "name": "La historia de los Einherjar",
+            "description": "Los valientes guerreros caídos en batalla que son elegidos por Odín para vivir en Valhalla y prepararse para luchar en el Ragnarök.",
+            "completed": false
+        }
+    ],
+    "Mitología egipcia": [
+        {
+            "name": "La creación del mundo",
+            "description": "Según la mitología egipcia, el mundo fue creado a partir del caótico vacío primordial llamado Nun, del cual emergió la colina primordial y el dios Atum, que creó a los primeros dioses.",
+            "completed": false
+        },
+        {
+            "name": "Osiris y el juicio de los muertos",
+            "description": "Osiris, dios de la vida después de la muerte, es asesinado por su hermano Seth, pero es resucitado por su esposa Isis. Los muertos son juzgados por Osiris, quienes deben pesar su corazón contra la pluma de Maat.",
+            "completed": false
         },
         {
             "name": "Isis y la búsqueda de Osiris",
-            "description": "Isis, tras la muerte de Osiris, viajó por el mundo en busca de las partes de su cuerpo para devolverle la vida, simbolizando la devoción y el amor conyugal."
+            "description": "Isis, buscando a su esposo Osiris tras su asesinato, realiza un viaje lleno de desafíos y magia, recuperando finalmente su cuerpo y logrando así su resurrección.",
+            "completed": false
         },
         {
-            "name": "Los cuatro hijos de Horus",
-            "description": "Estos dioses protectores del difunto eran Imsety, Hapy, Duamutef y Qebehsenuef, cada uno asociado con un concepto fundamental de la muerte y la protección."
+            "name": "Ra y la travesía en la barca solar",
+            "description": "Ra, el dios del sol, viaja en su barca a través del cielo durante el día y desciende al inframundo cada noche, enfrentándose a la serpiente Apofis que busca destruirlo.",
+            "completed": false
         },
         {
-            "name": "Seth y la lucha contra Horus",
-            "description": "Horus, el hijo de Osiris, luchó contra Seth por el trono de Egipto, simbolizando el conflicto entre el bien y el mal en la mitología egipcia."
+            "name": "La historia de horus y seth",
+            "description": "Horus, hijo de Osiris e Isis, enfrenta a su tío Seth en una serie de batallas por el control del trono de Egipto, simbolizando la lucha entre el orden y el caos.",
+            "completed": false
         },
         {
-            "name": "La historia de la creación de la diosa Hathor",
-            "description": "Hathor, diosa del amor y la música, emergió del sol y se convirtió en una figura central en la vida cotidiana y en las celebraciones egipcias."
+            "name": "La creación de los hombres",
+            "description": "Los seres humanos fueron creados a partir de lágrimas de Ra, simbolizando la conexión entre los dioses y la humanidad, y la importancia del culto hacia ellos.",
+            "completed": false
         },
         {
-            "name": "Las pirámides y la conexión con el más allá",
-            "description": "Se creía que las pirámides eran escalones hacia el cielo y servían como tumbas para los faraones, asegurando su resurrección y ascenso al más allá."
+            "name": "La diosa Ma’at",
+            "description": "Ma’at, diosa de la verdad, la justicia y el orden, es fundamental en la sociedad egipcia, representando el equilibrio cósmico y moral que debe ser mantenido.",
+            "completed": false
         },
         {
-            "name": "Nut y Geb: la separación de la tierra y el cielo",
-            "description": "Nut, la diosa del cielo, y Geb, el dios de la tierra, fueron separados por su padre Shu, representando la dualidad y la armonía en el universo."
+            "name": "La historia de Anubis",
+            "description": "Anubis, el dios con cabeza de chacal, es el guardián de las tumbas y el encargado de embalsamar a los muertos, guiando sus almas a la vida después de la muerte.",
+            "completed": false
+        },
+        {
+            "name": "El mito de Nut y Geb",
+            "description": "Nut, la diosa del cielo, y Geb, el dios de la tierra, se amaban profundamente, pero estaban separados por su padre Shu, simbolizando la unión entre cielo y tierra.",
+            "completed": false
+        },
+        {
+            "name": "El culto a Osiris",
+            "description": "El culto a Osiris se centra en la agricultura, la resurrección y la vida después de la muerte, siendo una de las prácticas más importantes en la historia de Egipto, simbolizando la esperanza de regeneración.",
+            "completed": false
         }
     ],
-    "Mitología Nórdica": [
+    "Mitología china": [
         {
-            "name": "La creación del mundo",
-            "description": "En la mitología nórdica, el mundo fue creado a partir del cuerpo del gigante Ymir, cuyas partes formaron la tierra, el cielo y los seres vivos."
+            "name": "El rey mono (Sun Wukong)",
+            "description": "Un héroe mitológico conocido por su astucia y fuerza, que busca la inmortalidad y se convierte en un personaje central de 'Viaje al Oeste'.",
+            "completed": false
         },
         {
-            "name": "El sacrificio de Odín",
-            "description": "Odín, el dios principal, se sacrificó a sí mismo colgándose de un árbol durante nueve días para obtener el conocimiento de las runas."
+            "name": "La diosa de la misericordia (Guanyin)",
+            "description": "Una deidad venerada en el budismo que representa la compasión y la piedad, capaz de escuchar las súplicas de los afligidos.",
+            "completed": false
         },
         {
-            "name": "La guerra de los Aesir y los Vanir",
-            "description": "Una guerra entre dos tribus de dioses, los Aesir y los Vanir, que culminó en un tratado de paz y la unión de ambos grupos."
+            "name": "El mito del origen de la dinastía Xia",
+            "description": "La historia de cómo el legendario emperador Yu el Grande fundó la primera dinastía, superando el caos de las inundaciones.",
+            "completed": false
         },
         {
-            "name": "Ragnarök",
-            "description": "El destino final y la batalla apocalíptica en la que muchos dioses, incluidos Odín y Thor, se enfrentan a sus enemigos, resultando en la muerte y la renovación del mundo."
+            "name": "La leyenda del fénix",
+            "description": "Un ave mítica que simboliza la renovación y la inmortalidad, se dice que resurge de sus cenizas.",
+            "completed": false
         },
         {
-            "name": "La historia de Thor y los gigantes",
-            "description": "Las aventuras de Thor, el dios del trueno, quien frecuentemente lucha contra gigantes, incluyendo su famosa pelea con el gigante de la Serpiente de Midgard."
+            "name": "La creación del mundo (Pangu)",
+            "description": "La narrativa de cómo Pangu, un gigante primordial, separó el cielo de la tierra y creó el mundo tras su muerte.",
+            "completed": false
         },
         {
-            "name": "La creación de los enanos",
-            "description": "Los enanos fueron hechos a partir de la arena y la tierra, y son conocidos por su habilidad en la forja, creando armas poderosas como Mjolnir, el martillo de Thor."
+            "name": "Chang'e y Houyi",
+            "description": "La leyenda de la diosa de la luna, Chang'e, y su esposo, el arquero Houyi, quien la traiciona y la separa de la tierra.",
+            "completed": false
         },
         {
-            "name": "Siegfried y el dragón",
-            "description": "Un héroe que derrotó a un dragón y se adueñó de un tesoro, símbolo de valor y traición, influyendo en la literatura nórdica y germánica."
+            "name": "El dragón de los cinco elementos (Long Wang)",
+            "description": "El dragón que controla las lluvias y gobierna los mares, simbolizando poder y protección en la cultura china.",
+            "completed": false
         },
         {
-            "name": "Balder y su muerte",
-            "description": "La trágica historia de Balder, querido por todos los dioses, cuya muerte fue orquestada por Loki, desatando una serie de eventos fatídicos."
+            "name": "La leyenda de Nüwa",
+            "description": "Una diosa creadora que moldeó a la humanidad con barro y reparó el cielo tras una gran catástrofe.",
+            "completed": false
         },
         {
-            "name": "Los viajes de Freyja",
-            "description": "Freya, diosa del amor y la guerra, realiza un viaje en busca de su marido perdido y se enfrenta a diversas pruebas en su camino."
+            "name": "El viajero de las estrellas (Zhinü)",
+            "description": "La historia de la diosa tejida que se enamora de un mortal, simbolizando el amor y la separación en el tradicional Festival de Qixi.",
+            "completed": false
         },
         {
-            "name": "La historia de la brújula de Odín",
-            "description": "Odín utiliza un objeto conocido como el 'hacha de luz' para guiar a los héroes en sus destinos, simbolizando la búsqueda de la sabiduría."
+            "name": "Las ocho inmortales (Ba Xian)",
+            "description": "Un grupo de ocho figuras mitológicas que simbolizan la inmortalidad y son muy populares en el folclore chino, cada uno con habilidades únicas.",
+            "completed": false
         }
     ],
-    "Mitología Hindú": [
-        {
-            "name": "El Ramayana",
-            "description": "Una épica que narra la vida de Rama, su exilio, y su lucha para rescatar a su esposa Sita del demonio Ravana."
-        },
+    "Mitología hindú": [
         {
             "name": "El Mahabharata",
-            "description": "Una de las obras más largas de la literatura, que narra la guerra entre los Pandavas y los Kauravas, y contiene la Bhagavad Gita."
+            "description": "Es una de las epopeyas más largas de la historia, que narra la lucha entre dos grupos familiares, los Pandavas y los Kauravas, y explora temas de deber, moralidad y justicia.",
+            "completed": false
         },
         {
-            "name": "La creación del mundo",
-            "description": "Historias sobre cómo los dioses, principalmente Brahma, Vishnu y Shiva, crearon el mundo y todo lo que hay en él."
+            "name": "El Ramayana",
+            "description": "Otra gran epopeya, que cuenta la historia del príncipe Rama y su lucha para rescatar a su esposa Sita del demonio Ravana, simbolizando el triunfo del bien sobre el mal.",
+            "completed": false
+        },
+        {
+            "name": "La creación del universo",
+            "description": "Se narra en los Vedas y Upanishads, donde Brahma, el creador, emerge del loto que crece del ombligo de Vishnu, dando origen a la creación y al ciclo de la vida y la muerte.",
+            "completed": false
+        },
+        {
+            "name": "El ciclo de reencarnación (Samsara)",
+            "description": "Un concepto central en el hinduismo que postula que las almas renacen en diferentes cuerpos a lo largo de ciclos de vida, guiadas por el karma acumulado en vidas previas.",
+            "completed": false
+        },
+        {
+            "name": "Las numerosas encarnaciones de Vishnu (Avatares)",
+            "description": "Vishnu desciende a la tierra en diversas formas conocidas como avatares, siendo los más conocidos Rama y Krishna, para restaurar el dharma en el universo.",
+            "completed": false
+        },
+        {
+            "name": "La guerra de Kurukshetra",
+            "description": "Un conflicto épico en el Mahabharata que involucra batallas simbólicas entre el bien y el mal, representando la lucha interna de cada humano entre sus deberes y deseos.",
+            "completed": false
+        },
+        {
+            "name": "La historia de Ganesha",
+            "description": "Nacido como hijo de Shiva y Parvati, Ganesha es conocido como el removedor de obstáculos y se le atribuyen numerosas historias relacionadas con su cabeza de elefante.",
+            "completed": false
+        },
+        {
+            "name": "La historia de Durga",
+            "description": "Durga es una diosa guerrera que lucha contra el buffalo demonio Mahishasura, simbolizando la victoria del poder femenino sobre las fuerzas del mal.",
+            "completed": false
         },
         {
             "name": "La danza de Shiva",
-            "description": "Representa el ciclo de creación, preservación y destrucción del universo a través de la danza cósmica de Shiva."
+            "description": "Shiva, en su forma de Nataraja, realiza la danza cósmica que representa la creación, conservación y destrucción del universo.",
+            "completed": false
         },
         {
-            "name": "Las historias de Krishna",
-            "description": "Las aventuras y enseñanzas de Krishna, desde su infancia traviesa hasta su papel en el Mahabharata."
-        },
-        {
-            "name": "La diosa Durga y el demonio Mahishasura",
-            "description": "La historia de cómo la diosa Durga derrotó al demonio búfalo Mahishasura, simbolizando la victoria del bien sobre el mal."
-        },
-        {
-            "name": "La leyenda de Ganesha",
-            "description": "Relatos sobre el nacimiento y las hazañas de Ganesha, el dios con cabeza de elefante, quien es emblemático de la sabiduría y la prosperidad."
-        },
-        {
-            "name": "La búsqueda del néctar de la inmortalidad",
-            "description": "La historia de los dioses y demonios que churning la leche del océano para obtener el amrita, el néctar de la inmortalidad."
-        },
-        {
-            "name": "El sacrificio de Daksha",
-            "description": "Una narración sobre cómo Daksha, un rey, ofendió a Shiva, lo que resultó en un sacrificio y la tragedia del conflicto entre dioses."
-        },
-        {
-            "name": "La curva de la creación y la disolución",
-            "description": "Una serie de relatos sobre cómo el universo es creado, destruido y recreado por los ciclos de Brahma, Vishnu y Shiva."
+            "name": "La historia de Rani Padmini",
+            "description": "Una leyenda de valentía y sacrificio, que narra la belleza, inteligencia y coraje de la reina Padmini, que enfrentó la invasión de sus tierras por Alauddin Khilji.",
+            "completed": false
         }
     ],
-    "Mitología Celta": [
+    "Mitología mesoamericana": [
         {
-            "name": "La Historia de Cú Chulainn",
-            "description": "Cú Chulainn es un héroe épico de la mitología irlandesa, famoso por su valentía y habilidades en batalla, conocido por su defensa de Ulster durante la guerra con Connacht."
+            "name": "El Popol Vuh",
+            "description": "Es el libro sagrado de los mayas que narra la creación del mundo, la historia de los dioses y la creación del hombre.",
+            "completed": false
         },
         {
-            "name": "La leyenda de la Guerrea de los Dos Reyes",
-            "description": "Una serie de batallas y conflictos entre los reyes de Ulster y Connacht, marcada por la traición y la guerra, y por la figura de Cú Roí."
+            "name": "La Leyenda de Quetzalcóatl",
+            "description": "Cuenta la historia del dios serpiente emplumada, su viaje hacia el este y el legado cultural que dejó en Mesoamérica.",
+            "completed": false
         },
         {
-            "name": "El ciclo de los hijos de Tuireann",
-            "description": "La historia de tres hermanos que buscan vengar la muerte de su padre, enfrentándose a una serie de pruebas y encuentros con deidades y seres sobrenaturales."
+            "name": "El sacrificio de los dioses",
+            "description": "Relata cómo Tezcatlipoca y Quetzalcóatl se ofrecieron como sacrificios para crear el sol y la vida en la Tierra.",
+            "completed": false
         },
         {
-            "name": "El viaje de Bran",
-            "description": "La aventura de Bran, quien navega hacia el más allá, descubriendo tierras mágicas y aprendiendo lecciones sobre la vida y la muerte."
+            "name": "La conquista de Tenochtitlán",
+            "description": "Narrativa de la resistencia y caída de la gran capital mexica ante los conquistadores españoles, que fusiona la historia y la mitología.",
+            "completed": false
         },
         {
-            "name": "La historia de los Fianna",
-            "description": "Un grupo de guerreros heroicos guiados por Fionn mac Cumhaill, conocidos por sus hazañas, la lucha contra criaturas sobrenaturales y su relación con la naturaleza."
+            "name": "La historia de Huitzilopochtli",
+            "description": "Explica el surgimiento del dios de la guerra y el sol, y su papel en la fundación de Tenochtitlán.",
+            "completed": false
         },
         {
-            "name": "El cuento de la vaca de oro",
-            "description": "La leyenda de la vaca mágica 'Donn', que proporciona abundancia y riquezas, y el conflicto que surge alrededor de este tesoro."
+            "name": "Cihuacoatl y el parto de la tierra",
+            "description": "Relato de Cihuacoatl, diosa de la fertilidad, y su influencia en los partos y la conexión con la tierra y la agricultura.",
+            "completed": false
         },
         {
-            "name": "La historia de Deirdre",
-            "description": "La tragedia de Deirdre, una mujer de extraordinaria belleza que es destinada a traer calamidad a su pueblo, atrapada entre el amor y el destino."
+            "name": "El mito de la serpiente de fuego",
+            "description": "Cuenta la creación del mundo a partir del enfrentamiento entre Tláloc y Tezcatlipoca, simbolizando la lucha entre el agua y el fuego.",
+            "completed": false
         },
         {
-            "name": "Las aventuras de Lugh",
-            "description": "Lugh, un dios de la luz y la habilidad, se embarca en aventuras heroicas y se convierte en líder de los Tuatha Dé Danann en su lucha contra los Fomorianos."
-        },
-        {
-            "name": "La llegada de los Tuatha Dé Danann",
-            "description": "El relato de la llegada de los Tuatha Dé Danann a Irlanda, su lucha por la tierra y su establecimiento como dioses y protectores del pueblo irlandés."
-        },
-        {
-            "name": "El ciclo del Rey Artur",
-            "description": "Aunque no es exclusivamente celta, la figura de Arturo y sus caballeros tiene fuertes conexiones con la mitología celta, explorando temas de honor, magia y traición."
-        }
-    ],
-    "Mitología Mesopotámica": [
-        {
-            "name": "La creación del mundo",
-            "description": "Relato sobre cómo los dioses crearon el universo y la humanidad, destacando el papel de Marduk."
-        },
-        {
-            "name": "El poema de Gilgamesh",
-            "description": "Una épica que narra las aventuras del rey Gilgamesh y su búsqueda de la inmortalidad."
-        },
-        {
-            "name": "El Diluvio",
-            "description": "Historia del gran diluvio enviado por los dioses, similar a la narración bíblica, con Utnapishtim como protagonista."
-        },
-        {
-            "name": "Inanna y el inframundo",
-            "description": "El viaje de la diosa Inanna al inframundo para enfrentar a su hermana Ereshkigal."
-        },
-        {
-            "name": "La batalla de los dioses",
-            "description": "Conflictos épicos entre dioses como Marduk, Tiamat y otros que definieron el orden del cosmos."
+            "name": "La leyenda de los dos hermanos",
+            "description": "Historia de los héroes gemelos, Hunahpú e Ixbalanqué, quienes luchan contra los dioses del inframundo en busca de la inmortalidad.",
+            "completed": false
         },
         {
             "name": "La creación del hombre",
-            "description": "Relato sobre cómo los dioses crearon a los humanos de la sangre de un dios para servirles."
+            "description": "Describe cómo los dioses crearon al ser humano a partir de maíz, la planta sagrada en la cultura mesoamericana.",
+            "completed": false
         },
         {
-            "name": "Los sueños de Gilgamesh",
-            "description": "Interpretación de los sueños de Gilgamesh que revelan su destino y lo que está por venir."
-        },
-        {
-            "name": "La historia de Adapa",
-            "description": "Relato sobre un sabio que es engañado y pierde la inmortalidad al no comer del pan de la vida."
-        },
-        {
-            "name": "El descenso de Ishtar",
-            "description": "Narración sobre la diosa del amor que busca a su amante Tammuz en el inframundo."
-        },
-        {
-            "name": "La leyenda de los siete sabios",
-            "description": "Historias de sabiduría y consejos de los sabios de Uruk, que influyeron en las decisiones de los reyes."
+            "name": "El ciclo del maíz",
+            "description": "Mito que explica la relación entre el maíz, la vida y la muerte, simbolizando la importancia del cultivo en la cultura mesoamericana.",
+            "completed": false
         }
     ]
 }

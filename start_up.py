@@ -13,7 +13,7 @@ def generate_initial_list (prompt, json_schema): #Function that will generate a 
         model= "gpt-4o-mini-2024-07-18",
         messages=[
             {"role": "system", "content": "Eres un hostoriador de mitologias"},
-            {"role": "user", "content": prompt}
+            {"role": "user", "content": prompt + " omite el campo completed"}
         ],
         response_format={"type": "json_schema",
                          "json_schema": {
@@ -33,7 +33,7 @@ def generate_story_list (list, story_num, json_schema, list_generating_prompt): 
 
         prompt = "utilizando unicamente caracteres que json acepte" + list_generating_prompt + f"las {story_num} historias mas importantes e interesantes de la {group["name"]}"
 
-        prompt = f"Devuelve en un json los nombre y una pequeña descripcion de las {story_num} historias mas interesantes, importantes y virales de la {group["name"]}, , utilizando solo caracteres que json acepte"
+        prompt = f"Devuelve en un json los nombre y una pequeña descripcion de las {story_num} historias mas interesantes, importantes y virales de la {group["name"]}, , utilizando solo caracteres que json acepte, utiliza el campo completed siempre a False"
         response = client.chat.completions.create( #asking GPT-4 to return the 10 most important and interesting stories of each mythology
             model= "gpt-4o-mini-2024-07-18",
             messages=[
@@ -71,6 +71,10 @@ if __name__ == "__main__":
                      "description": {
                          "type": "string",
                          "description": "La descripción del elemento"
+                     },
+                     "completed":{
+                         "type": "boolean",
+                         "default": False,
                      }
                  },
                  "required": ["name", "description"],
