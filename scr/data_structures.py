@@ -1,18 +1,23 @@
+from tokenize import group
+
+
 class Story:
-    def __init__(self, name, description):
+    def __init__(self, group,name, description):
+        self.group = group
         self.name = name
         self.description = description
         self.paragraphs = []
 
 
     def __str__ (self):
-        string = str(self.name) + ": " + str(self.description) + "\n" + "\n"
+        string = "De"+ str(self.group) + "\n" + str(self.name) + ": " + str(self.description) + "\n" + "\n"
         for paragraph in self.paragraphs:
             string += str(paragraph) + "\n"
         return string
 
     def __to_dictionary__(self): #This function will return a dictionary with the story information
         dict = {
+            "group": self.group,
             "name": self.name,
             "description": self.description,
             "paragraphs": []
@@ -24,6 +29,7 @@ class Story:
 
     @staticmethod
     def __from_dictionary__( dictionary): #This function will return a story object from a dictionary
+        group = dictionary["group"]
         name = dictionary["name"]
         description = dictionary["description"]
         paragraphs = []
@@ -36,7 +42,8 @@ class Story:
 class Paragraph:
     def __init__(self, text):
         self.text = text
-        self.images = []
+        self.images = None
+        self.prompt = None
         self.audio = None
 
     def __str__ (self):
@@ -46,6 +53,7 @@ class Paragraph:
         return {
             "text": self.text,
             "images": self.images,
+            "prompt": self.prompt,
             "audio": self.audio
         }
 
@@ -53,8 +61,10 @@ class Paragraph:
     def __from_dictionary__(dictionary): #This function will return a paragraph object from a dictionary
         text = dictionary["text"]
         images = dictionary["images"]
+        prompt = dictionary["prompt"]
         audio = dictionary["audio"]
         paragraph = Paragraph(text)
         paragraph.images = images
+        paragraph.prompt = prompt
         paragraph.audio = audio
         return paragraph
