@@ -77,10 +77,10 @@ def generate_images(story): #This method generates the images for each paragraph
         img_url = paragraph.images
         img_data = requests.get(img_url).content
 
-        directory = f'../archivos/{story.group}'
+        directory = f'../archivos/{story.group}/{story.name}'
         os.makedirs(directory, exist_ok=True)
 
-        with open(f'../archivos/{story.group}/{story.name}_{i}.png', 'wb') as handler:
+        with open(f'../archivos/{story.group}/{story.name}/{story.name}_{i}.png', 'wb') as handler:
             handler.write(img_data)
 
         i += 1

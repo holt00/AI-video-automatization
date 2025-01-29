@@ -1,5 +1,3 @@
-from tokenize import group
-
 
 class Story:
     def __init__(self, group,name, description):
