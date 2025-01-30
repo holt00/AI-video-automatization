@@ -44,11 +44,15 @@ def generate_story(story_dictionary, group): #This method generates the story sp
                          },
     )
     
-    reponse = json.loads(response.choices[0].message.content)["parrafos"]
+    response = json.loads(response.choices[0].message.content)["parrafos"]
 
 
     for parraph in response:
+        print(parraph)
         story.paragraphs.append(Paragraph(parraph))
+
+    store_info_on_json(story.__to_dictionary__(), story.name + ".json", group + "/" + story.name)
+
 
     generate_images(story)
 
@@ -57,7 +61,6 @@ def generate_images(story): #This method generates the images for each paragraph
 
     prompts = __generate_prompt_por_img__(story.name,story.paragraphs, story.group)
 
-#TODO arreglar el index out of bound
     for i in range(len(story.paragraphs)):
         story.paragraphs[i].prompt = prompts[i]
         print(prompts[i])
@@ -70,12 +73,9 @@ def generate_images(story): #This method generates the images for each paragraph
             n=1,
         )
 
-        story.paragraphs[i].images = response.data[0].url
+        story.paragraphs[i].img_url = response.data[0].url
 
-    i = 0
-    for paragraph in story.paragraphs:
-        img_url = paragraph.images
-        img_data = requests.get(img_url).content
+        img_data = requests.get(story.paragraphs[i].img_url).content
 
         directory = f'../archivos/{story.group}/{story.name}'
         os.makedirs(directory, exist_ok=True)
@@ -83,7 +83,9 @@ def generate_images(story): #This method generates the images for each paragraph
         with open(f'../archivos/{story.group}/{story.name}/{story.name}_{i}.png', 'wb') as handler:
             handler.write(img_data)
 
-        i += 1
+        story.paragraphs[i].images = f'../archivos/{story.group}/{story.name}/{story.name}_{i}.png'
+
+        store_info_on_json(story.__to_dictionary__(), story.name + ".json", story.group + "/" + story.name)
 
 
 
@@ -120,9 +122,6 @@ def __generate_prompt_por_img__(name,paragraphs, group):#This method generates t
                          },
 
     )
-
-
-
     return json.loads(response.choices[0].message.content)["items"]
 
 
@@ -135,6 +134,18 @@ def generate_audio(paragraph):
 def generate_video(story):
     pass
 
+def store_info_on_json(info,filename, directory):
+
+
+    directory = f'../archivos/{directory}'
+    os.makedirs(directory, exist_ok=True)
+
+    with open(directory + "/" +filename, 'w', encoding='utf-8') as file:
+        json.dump(info, file, ensure_ascii=False, indent=4)
+
+def load_info_from_json(filename, directory):
+    with open(f'../archivos/{directory}/{filename}', 'r', encoding='utf-8') as file:
+        return json.load(file)
 
 
 if __name__ == '__main__':
@@ -145,9 +156,22 @@ if __name__ == '__main__':
     for group in stories:
         for story in stories[group]:
             if not story["completed"]:
-                generate_story(story, group)
-                story["completed"] = True
-                break
+                try:
+                    dictoionary = load_info_from_json(story["name"] + ".json", group)
+                except FileNotFoundError:
+                    dictoionary = None
+
+                if dictoionary is None or "":
+                    generate_story(story, group)
+                    story["completed"] = True
+                    break
+                else:
+                    for paragraph in dictoionary["paragraphs"]:
+                        if paragraph["images"] is None or "":
+                            generate_images(Story.__from_dictionary__(dictoionary))
+                            story["completed"] = True
+                            break
+                    break
         break
 #TODO cambiar esto para que se actualice el json
 #TODO poner la creacion de audio y la creacionde video

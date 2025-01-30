@@ -41,6 +41,7 @@ class Paragraph:
     def __init__(self, text):
         self.text = text
         self.images = None
+        self.img_url = None
         self.prompt = None
         self.audio = None
 
@@ -51,6 +52,7 @@ class Paragraph:
         return {
             "text": self.text,
             "images": self.images,
+            "img_url": self.img_url,
             "prompt": self.prompt,
             "audio": self.audio
         }
@@ -59,10 +61,12 @@ class Paragraph:
     def __from_dictionary__(dictionary): #This function will return a paragraph object from a dictionary
         text = dictionary["text"]
         images = dictionary["images"]
+        img_url = dictionary["img_url"]
         prompt = dictionary["prompt"]
         audio = dictionary["audio"]
         paragraph = Paragraph(text)
         paragraph.images = images
+        paragraph.img_url = img_url
         paragraph.prompt = prompt
         paragraph.audio = audio
         return paragraph
