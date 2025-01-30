@@ -157,7 +157,7 @@ if __name__ == '__main__':
         for story in stories[group]:
             if not story["completed"]:
                 try:
-                    dictoionary = load_info_from_json(story["name"] + ".json", group)
+                    dictoionary = load_info_from_json(story["name"] + ".json", group + "/" + story["name"])
                 except FileNotFoundError:
                     dictoionary = None
 
@@ -165,13 +165,12 @@ if __name__ == '__main__':
                     generate_story(story, group)
                     story["completed"] = True
                     break
-                else:
-                    for paragraph in dictoionary["paragraphs"]:
-                        if paragraph["images"] is None or "":
-                            generate_images(Story.__from_dictionary__(dictoionary))
-                            story["completed"] = True
-                            break
+                elif any(paragraph["images"] is None or "" for paragraph in dictoionary["paragraphs"]):
+                    generate_images(Story.__from_dictionary__(dictoionary))
+                    story["completed"] = True
                     break
+
+
         break
 #TODO cambiar esto para que se actualice el json
 #TODO poner la creacion de audio y la creacionde video
