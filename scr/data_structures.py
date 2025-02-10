@@ -5,6 +5,7 @@ class Story:
         self.name = name
         self.description = description
         self.paragraphs = []
+        self.gameplay = None
 
 
     def __str__ (self):
@@ -18,7 +19,8 @@ class Story:
             "group": self.group,
             "name": self.name,
             "description": self.description,
-            "paragraphs": []
+            "paragraphs": [],
+            "gameplay": self.gameplay
         }
         for paragraph in self.paragraphs: #As paragraphs is a list of objects, we need to convert each object to a dictionary before appending it to the list
             dict["paragraphs"].append(paragraph.__to_dictionary__())
@@ -31,9 +33,12 @@ class Story:
         name = dictionary["name"]
         description = dictionary["description"]
         paragraphs = []
+        gameplay = dictionary["gameplay"]
         for paragraph in dictionary["paragraphs"]: #As paragraphs is a list of dictionaries, we need to convert each dictionary to an object before appending it to the list
             paragraphs.append(Paragraph.__from_dictionary__(paragraph))
         story = Story(name, description)
+        story.group = group
+        story.gameplay = gameplay
         story.paragraphs = paragraphs
         return story
 

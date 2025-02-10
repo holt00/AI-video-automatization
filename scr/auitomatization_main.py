@@ -4,6 +4,12 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv #module to load openai api key from .env file
 import requests
+from enum import Enum
+
+class gameplay_type(Enum):
+    minecraft = "minecraft"
+    subway_surfers = "subway surfers"
+    GTA = "GTA"
 
 
 load_dotenv()  # geting the api key from .env file
@@ -53,8 +59,8 @@ def generate_story(story_dictionary, group): #This method generates the story sp
 
     store_info_on_json(story.__to_dictionary__(), story.name + ".json", group + "/" + story.name)
 
+    return story
 
-    generate_images(story)
 
 
 def generate_images(story): #This method generates the images for each paragraph of the story
@@ -86,6 +92,10 @@ def generate_images(story): #This method generates the images for each paragraph
         story.paragraphs[i].images = f'../archivos/{story.group}/{story.name}/{story.name}_{i}.png'
 
         store_info_on_json(story.__to_dictionary__(), story.name + ".json", story.group + "/" + story.name)
+
+        story = animate_images(story)
+
+        return story
 
 
 
@@ -124,10 +134,14 @@ def __generate_prompt_por_img__(name,paragraphs, group):#This method generates t
     )
     return json.loads(response.choices[0].message.content)["items"]
 
-
+def animate_images(story):
+    pass
 
 #TODO create the function that will generate the image audio for each image
 def generate_audio(paragraph):
+    pass
+
+def generate_music(story):
     pass
 
 #TODO create the function that will arrange all the images and audio in a video
@@ -150,28 +164,76 @@ def load_info_from_json(filename, directory):
 
 if __name__ == '__main__':
 
-    with open('../archivos/stories_per_mythology.json', 'r', encoding='utf-8') as file:
-        stories = json.load(file)
+    do_generate_images = True
+    do_generate_music = True
+    do_generate_voice = True
 
-    for group in stories:
-        for story in stories[group]:
-            if not story["completed"]:
-                try:
-                    dictoionary = load_info_from_json(story["name"] + ".json", group + "/" + story["name"])
-                except FileNotFoundError:
-                    dictoionary = None
+    is_series = False
+    is_lots_of_series = True
 
-                if dictoionary is None or "":
-                    generate_story(story, group)
+    gameplay = gameplay_type.minecraft
+
+
+
+    if is_lots_of_series :
+        with open('../archivos/stories_per_mythology.json', 'r', encoding='utf-8') as file:
+            stories = json.load(file)
+
+        for group in stories:
+            for story in stories[group]:
+                if not story["completed"]:
+                    story = generate_story(story, group)
+                    if do_generate_images:
+                        story = generate_images(story)
+                    else:
+                        if gameplay == gameplay_type.minecraft:
+                           pass
+                        elif gameplay == gameplay_type.subway_surfers:
+                            pass
+                        elif gameplay == gameplay_type.GTA:
+                            pass
+                    if do_generate_music:
+                        story = generate_music(story)
+                    if do_generate_voice:
+                        generate_audio(story)
                     story["completed"] = True
+                    store_info_on_json(story, group + "/" + story["name"] + ".json", group)
                     break
-                elif any(paragraph["images"] is None or "" for paragraph in dictoionary["paragraphs"]):
-                    generate_images(Story.__from_dictionary__(dictoionary))
+            break
+
+    elif is_series:
+        with open('../archivos/stories_of_one.json', 'r', encoding='utf-8') as file:
+            stories = json.load(file)
+            for story in stories:
+                if not story["completed"]:
+                    story = generate_story(story, story["group"])
+                    if do_generate_images:
+                        story = generate_images(story)
+                    if do_generate_music:
+                        story = generate_music(story)
+                    if do_generate_voice:
+                        generate_audio(story)
                     story["completed"] = True
+                    store_info_on_json(story, story["name"] + ".json", story[group])
                     break
+                break
+    else:
+        with open('../archivos/story.json', 'r', encoding='utf-8') as file:
+            story = json.load(file)
+
+        if not story["completed"]:
+            story = generate_story(story, story["group"])
+            if do_generate_images:
+                story = generate_images(story)
+            if do_generate_music:
+                story = generate_music(story)
+            if do_generate_voice:
+                generate_audio(story)
+            story["completed"] = True
+            store_info_on_json(story, story["name"] + ".json", story["group"])
 
 
-        break
+
 #TODO cambiar esto para que se actualice el json
 #TODO poner la creacion de audio y la creacionde video
 
